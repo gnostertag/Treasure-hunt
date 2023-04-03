@@ -10,6 +10,11 @@ As a developer, you are tasked with creating a treasure hunt game. The user will
 ### 📚 User Stories
 
 - As a user, I can see a page with a three by three grid board game with a question mark in each square.
+- branch: game-board
+- import square into app.js and call component.
+- create a 9 square grid.
+- pass state array to square component.
+- styled square
 - As a user, when I click on one of the question marks an alert appears with the index position of that question mark in the array.
 - As a user, when I click on one of the question marks instead of the alert the question mark turns into a tree emoji.
 - As a user, if I select the winning square the question mark will become a treasure emoji and if I select the losing square the question mark will become a bomb emoji.
