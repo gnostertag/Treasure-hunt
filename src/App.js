@@ -3,19 +3,8 @@ import "./App.css";
 import Square from "./components/Square";
 
 const App = () => {
-  
-  const initialBoard =[
-    "?",
-    "?",
-    "?",
-    "?",
-    "?",
-    "?",
-    "?",
-    "?",
-    "?",
-  ];
-  const [board, setBoard] = useState(initialBoard)
+  const initialBoard = ["?", "?", "?", "?", "?", "?", "?", "?", "?"];
+  const [board, setBoard] = useState(initialBoard);
   const [treasureLocation, setTreasureLocation] = useState(
     Math.floor(Math.random() * board.length)
   );
@@ -23,7 +12,7 @@ const App = () => {
   const [bombLocation, setBombLocation] = useState(
     Math.floor(Math.random() * board.length)
   );
-  const [reset, setReset] = useState(false)
+  const [reset, setReset] = useState(false);
 
   const handleGamePlay = (clickedSquare) => {
     let updateBoard = [...board];
@@ -45,7 +34,6 @@ const App = () => {
     setReset(true);
   };
 
-  
   return (
     <>
       <h1>Treasure Hunt Game</h1>
@@ -62,7 +50,9 @@ const App = () => {
           );
         })}
       </div>
-      <button onClick={resetGame} className="button">Reset Game</button>
+      <button onClick={resetGame} className="button">
+        Reset Game
+      </button>
     </>
   );
 };
