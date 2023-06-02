@@ -15,5 +15,10 @@ h1 {
   flex-wrap: wrap;
   width: 610px;
   margin: 0 auto;
-
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
