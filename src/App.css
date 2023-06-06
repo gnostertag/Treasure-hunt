@@ -11,10 +11,12 @@ h1 {
 }
 
 .board {
+  background-image: url('./assets/sand background.jpeg');
   display: flex;
   flex-wrap: wrap;
   width: 610px;
   margin: 0 auto;
+  
 }
 
  

@@ -23,7 +23,7 @@ const App = () => {
       updateBoard[clickedSquare] = "💣";
       setBoard(updateBoard);
     } else {
-      updateBoard[clickedSquare] = "🌴";
+      updateBoard[clickedSquare] = "❌";
       setBoard(updateBoard);
     }
   };
