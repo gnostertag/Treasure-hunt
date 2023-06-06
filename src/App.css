@@ -21,10 +21,12 @@ h1 {
 
  
   .button {
-    background-color: sandybrown;
+    background-image: url('./assets/jolly roger.png');
+    background-position: 0%;
+    background-size: auto;
     border: 0 solid #285fcd;
     box-sizing: border-box;
-    color: #000000; 
+    color: red; 
     display: flex;
     font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
     font-size: 1rem;
