@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 import Square from "./components/Square";
+import video from './assets/waves.mp4';
 
 const App = () => {
   const initialBoard = ["?", "?", "?", "?", "?", "?", "?", "?", "?"];
@@ -37,6 +38,7 @@ const App = () => {
   return (
     <>
       <div className="background">
+        <video src={video} autoPlay loop muted type='video.mp4' className="video"/>
       <h1>Treasure Hunt</h1>
       <div className="board">
         {board.map((square, index) => {
@@ -52,7 +54,7 @@ const App = () => {
         })}
       </div>
       <button onClick={resetGame} className="button">
-        Reset Game
+      🔄 Reset Game 🔄
       </button>
       </div>
     </>
