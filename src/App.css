@@ -2,6 +2,18 @@ h1 {
   text-align: center;
 }
 
+
+.video {
+  position: absolute; 
+  top: 0;
+  left: 0;
+  z-index: -1; 
+  width: 100%; 
+  height: 100%;
+  object-fit: cover; 
+  
+}
+
 .square {
   height: 200px;
   width: 200px;
@@ -16,13 +28,6 @@ h1 {
   flex-wrap: wrap;
   width: 610px;
   margin: 0 auto;
-}
-.background {
-  background-image: url('./assets/water-background.jpeg');
-  flex-wrap: wrap;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
 }
 
  
