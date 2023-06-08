@@ -16,7 +16,13 @@ h1 {
   flex-wrap: wrap;
   width: 610px;
   margin: 0 auto;
-  
+}
+.background {
+  background-image: url('./assets/water-background.jpeg');
+  flex-wrap: wrap;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
 }
 
  

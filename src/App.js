@@ -36,7 +36,8 @@ const App = () => {
 
   return (
     <>
-      <h1>Treasure Hunt Game</h1>
+      <div className="background">
+      <h1>Treasure Hunt</h1>
       <div className="board">
         {board.map((square, index) => {
           return (
@@ -53,6 +54,7 @@ const App = () => {
       <button onClick={resetGame} className="button">
         Reset Game
       </button>
+      </div>
     </>
   );
 };
