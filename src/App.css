@@ -18,10 +18,10 @@ h1 {
   margin: 0 auto;
 }
 .background {
-  background-image: url('./assets/waves-background.jpeg');
+  background-image: url('./assets/water-background.jpeg');
   flex-wrap: wrap;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center center;
 }
 
