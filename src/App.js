@@ -20,9 +20,15 @@ const App = () => {
     if (clickedSquare === treasureLocation) {
       updateBoard[clickedSquare] = "💎";
       setBoard(updateBoard);
+      setTimeout(() => {
+        alert("You Win!");
+      }, 500);
     } else if (clickedSquare === bombLocation) {
       updateBoard[clickedSquare] = "💣";
       setBoard(updateBoard);
+      setTimeout(() => {
+        alert("Too Bad");
+      }, 500);
     } else {
       updateBoard[clickedSquare] = "❌";
       setBoard(updateBoard);
