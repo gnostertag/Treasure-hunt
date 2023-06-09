@@ -20,9 +20,15 @@ const App = () => {
     if (clickedSquare === treasureLocation) {
       updateBoard[clickedSquare] = "💎";
       setBoard(updateBoard);
+      setTimeout(() => {
+        alert("You Win!");
+      }, 500);
     } else if (clickedSquare === bombLocation) {
       updateBoard[clickedSquare] = "💣";
       setBoard(updateBoard);
+      setTimeout(() => {
+        alert("Too Bad");
+      }, 500);
     } else {
       updateBoard[clickedSquare] = "❌";
       setBoard(updateBoard);
@@ -39,7 +45,7 @@ const App = () => {
     <>
       <div className="background">
         <video src={video} autoPlay loop muted type='video.mp4' className="video"/>
-      <h1>Treasure Hunt</h1>
+      <h1> </h1>
       <div className="board">
         {board.map((square, index) => {
           return (
