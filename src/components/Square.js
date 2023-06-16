@@ -1,15 +1,16 @@
-import React from "react"
+import React from "react";
 
-const Square = ({square, index, handleGamePlay}) => {
-const handleClick = () => {
-  handleGamePlay(index)   
-    
-}
+const Square = ({ square, index, handleGamePlay }) => {
+  const handleClick = () => {
+    handleGamePlay(index);
+  };
 
   return (
     <>
-      <div className="square" onClick= {handleClick} >{square}</div>
+      <div className="square" onClick={handleClick}>
+        {square}
+      </div>
     </>
-  )
-}
-export default Square
+  );
+};
+export default Square;

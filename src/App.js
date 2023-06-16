@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 import Square from "./components/Square";
-import video from './assets/waves.mp4';
+import video from "./assets/waves.mp4";
 
 const App = () => {
   const initialBoard = ["?", "?", "?", "?", "?", "?", "?", "?", "?"];
@@ -44,24 +44,31 @@ const App = () => {
   return (
     <>
       <div className="background">
-        <video src={video} autoPlay loop muted type='video.mp4' className="video"/>
-      <h1> </h1>
-      <div className="board">
-        {board.map((square, index) => {
-          return (
-            <Square
-              square={square}
-              index={index}
-              key={index}
-              reset={reset}
-              handleGamePlay={handleGamePlay}
-            />
-          );
-        })}
-      </div>
-      <button onClick={resetGame} className="button">
-      🔄 Reset Game 🔄
-      </button>
+        <video
+          src={video}
+          autoPlay
+          loop
+          muted
+          type="video.mp4"
+          className="video"
+        />
+        <h1> </h1>
+        <div className="board">
+          {board.map((square, index) => {
+            return (
+              <Square
+                square={square}
+                index={index}
+                key={index}
+                reset={reset}
+                handleGamePlay={handleGamePlay}
+              />
+            );
+          })}
+        </div>
+        <button onClick={resetGame} className="button">
+          🔄 Reset Game 🔄
+        </button>
       </div>
     </>
   );
