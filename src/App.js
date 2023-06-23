@@ -27,7 +27,7 @@ const App = () => {
       updateBoard[clickedSquare] = "💣";
       setBoard(updateBoard);
       setTimeout(() => {
-        alert("Too Bad");
+        alert("You Lose");
       }, 500);
     } else {
       updateBoard[clickedSquare] = "❌";
